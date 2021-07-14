@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet" />
+        <title>More Stuff!</title>
+    </head>
+
+    <body>
+
+        <div id="textbox">
+            <b>FAQ</b>
+            <p>Q. What's up?</p>
+            <p>A. Nothing much! I'm sleepy :(</p>
+            <br>
+            <div id="question-stuff">
+                <p>If I didn't answer your question, feel free to send it to me using this box!</p>
+                <textarea id="txtarea" type="text"></textarea><br>
+                <button id="send" onclick="asked()">send!</button>
+            </div>
+            <div id="answer">
+                <b>Question Sent! :) Thanks!!</b>
+            </div>
+        </div>
+        <div id="next-page-link">
+            <a href="index.html">index page ></a>
+        </div>
+    </body>
+    <script>
+        document.getElementById("answer").hidden = true;
+        function asked() {
+            document.getElementById("question-stuff").hidden = true;
+            document.getElementById("answer").hidden = false;
+            console.log("asked");
+        }
+    </script>
+
+</html>

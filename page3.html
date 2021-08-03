@@ -10,7 +10,7 @@
         <div id="textbox">
             <b>FAQ</b>
             <p>Q. What's up?</p>
-            <p>A. Nothing much! I'm sleepy :(</p>
+            <p>A. Nothing much! I'm tired :(</p>
             <br>
             <div id="question-stuff">
                 <p>If I didn't answer your question, feel free to send it to me using this box!</p>
@@ -25,13 +25,16 @@
             <a href="index.html">index page ></a>
         </div>
     </body>
-    <script>
-        document.getElementById("answer").hidden = true;
-        function asked() {
-            document.getElementById("question-stuff").hidden = true;
-            document.getElementById("answer").hidden = false;
-            console.log("asked");
-        }
-    </script>
+
 
 </html>
+<script>
+    document.getElementById("answer").hidden = true;
+    const uwu = "yeet";
+    function asked() {
+        document.getElementById("question-stuff").hidden = true;
+        document.getElementById("answer").hidden = false;
+        console.log("asked");
+        console.log(document.getElementById("answer"));
+    }
+</script>

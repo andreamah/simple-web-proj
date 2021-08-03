@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Bunny Demo</title>
+</head>
+
+<body>
+    <div id="textbox">
+        <div id="blob">
+            <img src="./blob.gif" width="200px">
+            <p>what's behind this mysterious blob??</p>
+            <button id="send" onclick="reveal()">CLICK HERE TO FIND OUT!</button>
+        </div>
+        <div id="bunny" hidden=true>
+            <img src="./bun.gif" width="200px">
+            <p>a bunny! amazing!</p>
+            <p>the bunny has waved <b><span id="numWaves">0</span></b> times</p>
+            <button onclick="wave()">WAVE BACK</button>
+        </div>
+
+    </div>
+</body>
+<script>
+    let waves = 0;
+    async function reveal() {
+        let waves = 0;
+        document.getElementById("blob").hidden = true;
+        document.getElementById("bunny").hidden = false;
+        console.log("revealed!");
+        setInterval(incrWaves, 1000);
+    }
+
+    function incrWaves() {
+        waves++;
+        document.getElementById("numWaves").innerHTML = waves;
+    }
+
+    function generateRandom(max) { 
+    return Math.floor(Math.random() * max);
+} 
+
+    function wave() {
+        const responses = [
+            "the bunny waves back!",
+            "the bunny didn't notice :(",
+            "the bunny is thrilled!",
+            "the bunny wants to be friends with you"]
+        const random_index = generateRandom(responses.length);
+        console.log(responses[random_index]);
+    }
+</script>
+
+</html>

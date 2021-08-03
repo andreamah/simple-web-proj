@@ -18,6 +18,7 @@
             <p>a bunny! amazing!</p>
             <p>the bunny has waved <b><span id="numWaves">0</span></b> times</p>
             <button onclick="wave()">WAVE BACK</button>
+            <p id="resp"></p>
         </div>
 
     </div>
@@ -48,7 +49,7 @@
             "the bunny is thrilled!",
             "the bunny wants to be friends with you"]
         const random_index = generateRandom(responses.length);
-        console.log(responses[random_index]);
+        document.getElementById("resp").innerHTML = responses[random_index];
     }
 </script>
 

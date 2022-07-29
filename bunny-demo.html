@@ -10,12 +10,12 @@
     <div id="textbox">
         <div id="blob">
             <img src="./blob.gif" width="200px">
-            <p>what's behind this mysterious blob??</p>
+            <p>what's behind this mysterious blobbbb??</p>
             <button id="send" onclick="reveal()">CLICK HERE TO FIND OUT!</button>
         </div>
         <div id="bunny" hidden=true>
             <img src="./bun.gif" width="200px">
-            <p>a bunny! amazing!</p>
+            <p>a bunny! amazing! woooo!</p>
             <p>the bunny has waved <b><span id="numWaves">0</span></b> times</p>
             <button onclick="wave()">WAVE BACK</button>
             <p id="resp"></p>
@@ -29,7 +29,7 @@
         let waves = 0;
         document.getElementById("blob").hidden = true;
         document.getElementById("bunny").hidden = false;
-        console.log("revealed!");
+        console.info("revealed!");
         setInterval(incrWaves, 1000);
     }
 

@@ -1,0 +1,11 @@
+{
+    "livePreview.autoRefreshPreview": "On All Changes in Editor",
+    "debug.javascript.defaultRuntimeExecutable": {
+        "pwa-node": "node"
+    },
+    "livePreview.customExternalBrowser": "Default",
+    "livePreview.serverRoot": "",
+    "livePreview.defaultPreviewPath": "/测试目录/page.html",
+    "search.quickOpen.includeSymbols": true,
+    "livePreview.useCrossOriginIsolationHeaders": false,
+}

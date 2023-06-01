@@ -5,11 +5,16 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Edge",
+            "type": "msedge",
+            "name": "http://127.0.0.1:3004/page3.html",
             "request": "launch",
-            "type": "pwa-msedge",
-            "url": "http://localhost:5000",
-            "webRoot": "${workspaceFolder}"
+            "url": "http://127.0.0.1:3004/page3.html"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/index.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/index.html"
         }
     ]
 }

@@ -15,7 +15,7 @@
         </div>
         <div id="bunny" hidden=true>
             <img src="./bun.gif" width="200px">
-            <p>a bunny! amazing!</p>
+            <p>a bunny! amazing! woooo!</p>
             <p>the bunny has waved <b><span id="numWaves">0</span></b> times</p>
             <button onclick="wave()">WAVE BACK</button>
             <p id="resp"></p>
@@ -29,7 +29,7 @@
         let waves = 0;
         document.getElementById("blob").hidden = true;
         document.getElementById("bunny").hidden = false;
-        console.log("revealed!");
+        console.info("revealed!");
         setInterval(incrWaves, 1000);
     }
 
@@ -38,9 +38,9 @@
         document.getElementById("numWaves").innerHTML = waves;
     }
 
-    function generateRandom(max) { 
-    return Math.floor(Math.random() * max);
-} 
+    function generateRandom(max) {
+        return Math.floor(Math.random() * max);
+    }
 
     function wave() {
         const responses = [

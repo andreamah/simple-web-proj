@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Preview Page 0",
+            "command": "${input:preview-test}",
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "preview-test",
+            "type": "command",
+            "command": "livePreview.start.preview.atFileString",
+            "args": "C:\\Users\\andreamah\\Documents\\for-testing\\simple-web-proj\\page2.html"
+        }
+    ]
+}

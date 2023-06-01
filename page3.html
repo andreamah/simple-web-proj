@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="styles.css" rel="stylesheet" />
-        <title>More Stuff!</title>
-    </head>
 
-    <body>
+<head>
+    <link href="styles.css" rel="stylesheet" />
+    <title>More Stuff!</title>
+</head>
 
-        <div id="textbox">
-            <b>FAQ</b>
-            <p>Q. What's up?</p>
-            <p>A. Nothing much! I'm tired :(</p>
-            <br>
-            <div id="question-stuff">
-                <p>If I didn't answer your question, feel free to send it to me using this box!</p>
-                <textarea id="txtarea" type="text"></textarea><br>
-                <button id="send" onclick="asked()">send!</button>
-            </div>
-            <div id="answer">
-                <b>Question Sent! :) Thanks!!</b>
-            </div>
+<body>
+
+    <div id="textbox">
+        <b>FAQ</b>
+
+        <p>Q. What's up?</p>
+        <p>A. Nothing much! I'm tired :(</p>
+        <br>
+        <div id="question-stuff">
+            <p>If I didn't answer your question, feel free to send it to me using this box!</p>
+            <textarea id="txtarea" type="text"></textarea><br>
+            <button id="send" onclick="asked()">send!</button>
         </div>
-        <div id="next-page-link">
-            <a href="index.html">index page ></a>
+        <div id="answer">
+            <b>Question Sent! :) Thanks!!</b>
         </div>
-    </body>
-
+    </div>
+    <div id="next-page-link">
+        <a href="index.html">index page ></a>
+    </div>
+</body>
 
 </html>
 <script>
@@ -33,7 +34,7 @@
     function asked() {
         document.getElementById("question-stuff").hidden = true;
         document.getElementById("answer").hidden = false;
-        console.log();
         console.log("asked the following question: " + document.getElementById("txtarea").value);
     }
+
 </script>

